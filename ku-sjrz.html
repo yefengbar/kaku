@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1.0" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>商家入驻</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+
+<div id="_centent">
+<header>
+	<div class="rt-bk">
+		<i class="bk"></i>
+		<p>返回</p>
+	</div>
+	<div class="top-name"><p>商家入驻</p></div>
+    <div class="rt-mn">
+		<i class="mn"></i>
+	</div>
+</header>
+<section class="mt-1"> 
+    <div class="ps-lt">
+        <div class="lt-dsb">
+            <p>商铺店名</p>
+            <input class="inp_r" type="text" />
+        </div>
+        <div class="lt-dsb">
+            <p>联系方式</p>
+            <input class="inp_r" type="text" />
+        </div>
+        <div class="lt-dsb">
+            <p>店铺位置</p>
+            <input class="inp_r" type="text" id="yPos" style="width:4rem;margin-right:1rem"/>
+            <span class="pos" onclick="poss()">定位</span>
+        </div>
+        <div class="ps-ct">
+            <div class="pc-xf borb">
+                <div class="px-txt">
+                    <div id="allmap" class="season"></div>
+                </div>
+            </div>
+        </div>
+        <div class="zf-btn"><a href="">申请入驻</a></div>
+    </div>
+</section>
+<div class="jg"></div>
+</div>
+<script>
+	(function (doc, win) {
+	  var docEl = doc.documentElement,
+		resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+		recalc = function () {
+		  var clientWidth = docEl.clientWidth;
+		  if (!clientWidth) return;
+		  docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+		};
+
+	  if (!doc.addEventListener) return;
+	  win.addEventListener(resizeEvt, recalc, false);
+	  doc.addEventListener('DOMContentLoaded', recalc, false);
+	})(document, window);
+</script>
+<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=pZ07bwCiFUGLwCgFzYx5bmDa"></script> 
+<script type="text/javascript">
+	// 百度地图API功能
+	var map = new BMap.Map("allmap");
+	var point = new BMap.Point(116.331398,39.897445);
+	map.centerAndZoom(point,12);
+	// 创建地址解析器实例
+    function poss(){
+        var youPos = $('#yPos').val();
+        var myGeo = new BMap.Geocoder();
+        // 将地址解析结果显示在地图上,并调整地图视野
+        myGeo.getPoint(youPos, function(point){
+            if (point) {
+                map.centerAndZoom(point, 16);
+                map.addOverlay(new BMap.Marker(point));
+            }else{
+                alert("您选择地址没有解析到结果!");
+            }
+        }, "北京市");
+    }
+</script>
+</body>
+</html>

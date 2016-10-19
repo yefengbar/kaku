@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1.0" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>申请提现</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+
+<div id="_centent">
+<header>
+	<div class="rt-bk">
+		<i class="bk"></i>
+		<p>返回</p>
+	</div>
+	<div class="top-name"><p>申请提现</p></div>
+    <div class="rt-mn">
+		<i class="mn"></i>
+	</div>
+</header>
+<section class="mt-0 sqtx">
+    <p>钱包金额显示</p>
+    <div><span id="myMony">15000</span>&nbsp;元</div>
+</section>
+<section class="mt-1"> 
+    <div class="ps-lt">
+        <div class="lt-dsb">
+            <p>温馨提示：</p>
+        </div>
+        <div class="ps-ct">
+            <div class="pc-xf borb">
+                <div class="px-txt">
+                    <p>【情况一】满足提现要求，请直接点击“确认申请”按钮进行申请提现。</p>
+                    <p>【情况二】您还没有消费满20次不能进行提现（您已消费15次，还差5次就可以提现了哦！）</p>
+                    <P>【情况三】您的卡已过期，我们将优先将您的卡包内的差价补偿给商户，部分差价您可提现！</P>
+                </div>
+            </div>
+        </div>
+        <div class="zf-btn"><a href="">确认申请</a></div>
+    </div>
+</section>
+<div class="jg"></div>
+</div>
+<script>
+	(function (doc, win) {
+	  var docEl = doc.documentElement,
+		resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+		recalc = function () {
+		  var clientWidth = docEl.clientWidth;
+		  if (!clientWidth) return;
+		  docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+		};
+
+	  if (!doc.addEventListener) return;
+	  win.addEventListener(resizeEvt, recalc, false);
+	  doc.addEventListener('DOMContentLoaded', recalc, false);
+	})(document, window);
+</script>
+<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+</body>
+</html>

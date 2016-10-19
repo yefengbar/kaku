@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1.0" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>帮助</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+
+<div id="_centent">
+<header>
+	<div class="rt-bk">
+		<i class="bk"></i>
+		<p>返回</p>
+	</div>
+	<div class="top-name"><p>帮助</p></div>
+    <div class="rt-mn">
+		<i class="mn"></i>
+	</div>
+</header>
+<section class="mt-0 sqtx">
+    <p>联系我们：0311-80863394</p>
+</section>
+<section class="mt-1">
+    <div class="ps-lt">
+        <div class="lt-dsb">
+            <p>商户使用说明：</p>
+        </div>
+        <div class="ps-ct">
+            <div class="pc-xf borb">
+                <div class="px-txt">
+                    <p>1·请返回重新支付！</p>
+                    <p>2·可能因网络中断，信号不稳定导致，</p>
+                    <p>3·如果有其他其他疑问请联系客服：0311-80683394</p>
+                </div>
+            </div>
+        </div>
+        <div class="lt-dsb">
+            <p>用户使用说明：</p>
+        </div>
+        <div class="ps-ct">
+            <div class="pc-xf borb">
+                <div class="px-txt">
+                    <p>1·请返回重新支付！</p>
+                    <p>2·可能因网络中断，信号不稳定导致，</p>
+                    <p>3·如果有其他其他疑问请联系客服：0311-80683394</p>
+                </div>
+            </div>
+        </div>
+        <div class="zf-btn"><a href="">去卡包看看</a></div>
+    </div>
+</section>
+<div class="jg"></div>
+</div>
+<script>
+	(function (doc, win) {
+	  var docEl = doc.documentElement,
+		resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+		recalc = function () {
+		  var clientWidth = docEl.clientWidth;
+		  if (!clientWidth) return;
+		  docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+		};
+
+	  if (!doc.addEventListener) return;
+	  win.addEventListener(resizeEvt, recalc, false);
+	  doc.addEventListener('DOMContentLoaded', recalc, false);
+	})(document, window);
+</script>
+<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+</body>
+</html>

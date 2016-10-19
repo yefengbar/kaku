@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1.0" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>消费</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+
+<div id="_centent">
+<header>
+	<div class="rt-bk">
+		<i class="bk"></i>
+		<p>返回</p>
+	</div>
+	<div class="top-name"><p>消费</p></div>
+    <div class="rt-mn">
+		<i class="mn"></i>
+	</div>
+</header>
+<section class="mt-0">
+    <div class="lt-dsb">
+        <p>您本次消费应支付35元</p>
+    </div>
+    <table width="100%">
+        <tr><td>会员价</td><td width="20"></td><td>差价</td><td width="20"></td><td>应支付</td></tr>
+        <tr><td>20</td><td>+</td><td>15</td><td>=</td><td>35 元</td></tr>
+    </table>
+</section>
+<section class="mt-1"> 
+    <div class="ps-lt">
+        <div class="lt-dsb">
+            <p>温馨提示：</p>
+        </div>
+        <div class="ps-ct">
+            <div class="pc-xf borb">
+                <div class="px-txt">
+                    <p>本次消费完成后差价将自动转入您的钱包，当您消费满约定次数，钱包内所有差价即可提现。</p>
+                </div>
+            </div>
+        </div>
+        <div class="zf-btn"><a href="">确认支付</a></div>
+    </div>
+</section>
+<div class="jg"></div>
+</div>
+<script>
+	(function (doc, win) {
+	  var docEl = doc.documentElement,
+		resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+		recalc = function () {
+		  var clientWidth = docEl.clientWidth;
+		  if (!clientWidth) return;
+		  docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+		};
+
+	  if (!doc.addEventListener) return;
+	  win.addEventListener(resizeEvt, recalc, false);
+	  doc.addEventListener('DOMContentLoaded', recalc, false);
+	})(document, window);
+</script>
+<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+</body>
+</html>

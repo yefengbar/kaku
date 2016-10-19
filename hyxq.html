@@ -1,0 +1,126 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1.0" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>会员卡详情</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+<body>
+<script>
+	(function (doc, win) {
+	  var docEl = doc.documentElement,
+		resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+		recalc = function () {
+		  var clientWidth = docEl.clientWidth;
+		  if (!clientWidth) return;
+		  docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+		};
+
+	  if (!doc.addEventListener) return;
+	  win.addEventListener(resizeEvt, recalc, false);
+	  doc.addEventListener('DOMContentLoaded', recalc, false);
+	})(document, window);
+</script>
+<div id="_centent">
+<header>
+	<div class="rt-bk">
+		<i class="bk"></i>
+		<p>返回</p>
+	</div>
+	<div class="top-name"><p>会员卡详情</p></div>
+</header>
+<!--如果使用自定义图片则放开slideShow-->
+<!--
+<div class="slideShow">
+    <ul class="slides">
+        <li><a href="" target="_blank"><img src="./img/slider1-1.png" /></a></li>
+        <li><a href="" target="_blank"><img src="./img/slider1-2.png" /></a></li>
+        <li><a href="" target="_blank"><img src="./img/slider1-1.png" /></a></li>
+        <li><a href="" target="_blank"><img src="./img/slider1-2.png" /></a></li>
+    </ul>
+</div>
+-->
+<!--如果使用卡包图片则放开list2-->
+<section class="mt-1 list2"> 
+    <div class="ps-lt pink" style="margin-bottom:0;">
+        <div class="lt-dsb">
+            <p>天之骄子洗车店</p>
+            <i class="arr-right"></i>
+        </div>
+        <div class="ps-ct hy1">
+            <div class="pc-xf">
+                <div class="px-txt">
+                    <p>市场价25元/次</p>
+                    <p>会员价300元/20次</p>
+                </div>
+                <div class="px-btn"><a href="">去消费</a></div>
+            </div>
+            <div class="pc-xf">
+                <div class="px-txt">
+                    <p>钱包25元</p>
+                    <p>已消费1次/20次</p>
+                </div>
+                <div class="px-btn"><a href="">去提现</a></div>
+            </div>
+            <p class="endTime"><img src="./img/vip.png" />截至：2016年8月30日</p>
+        </div>
+    </div>
+</section>
+<section class="mt-1" style="margin-top:0;"> 
+    <div class="ps-lt">
+        <div class="lt-dsb">
+            <p>消费记录</p>
+            <i class="arr-right"></i>
+        </div>
+        <div class="ps-ct">
+            
+            <div class="pc-xf borbd dianm">
+                <div class="px-txt">
+                    <p class="bol padtb borbd marb">卡详情：</p>
+                    <p>卡名称：天之骄子洗车店</p>
+                    <p>市场价：25元/次　会员价：300元/20次</p>
+                    <p>使用期限：1年</p>
+                    <p>已消费次数：20次</p>
+                    <p>钱包余额：25元，还有10次消费即可提现</p>
+                    
+                    <p class="bol padtb borbd marb">商家信息：</p>
+                    <p>店名：天之骄子洗车店</p>
+                    <p>地址：xxx区xxx街xxx号</p>
+                    <p>客服电话：0311-8490608</p>
+                    <p class="bol padtb borbd marb">其他支持门店：</p>
+                    <p>西直门枫蓝国际国际店</p>
+                    <p>积水潭新华商场店</p>
+                    <p>西直门枫蓝国际国际店</p>
+                    <p>积水潭新华商场店</p>
+                </div>
+            </div>
+            
+            <div class="pc-xf borb">
+                <div class="px-txt">
+                    <p class="bol">会员卡说明:</p>
+                    <p>1·本卡使用期限：1年</p>
+                    <p>2·仅限本人使用请勿转交他人</p>
+                    <p>3·使用前请查看支持商店</p>
+                    <p>4·本卡使用解释权归卡酷所有</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="jg"></div>
+</div>
+<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="./js/slide_show.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$('.slides').bxSlider({
+	});
+})
+</script>
+</body>
+</html>

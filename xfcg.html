@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1.0" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>消费</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+
+<div id="_centent">
+<header>
+	<div class="rt-bk">
+		<i class="bk"></i>
+		<p>返回</p>
+	</div>
+	<div class="top-name"><p>消费</p></div>
+    <div class="rt-mn">
+		<i class="mn"></i>
+	</div>
+</header>
+<section class="mt-0">
+    <p class="tips sec">您本次支付已成功！</p>
+</section>
+<section class="mt-1"> 
+    <div class="ps-lt">
+        <div class="lt-dsb">
+            <p>温馨提示：</p>
+        </div>
+        <div class="ps-ct">
+            <div class="pc-xf borb">
+                <div class="px-txt">
+                    <p>1·差价将稍后自动转入您的钱包</p>
+                    <P>2·还有N次，钱包内的钱就可以提现啦</P>
+                    <p>3·如有疑问请联系：83683394</p>
+                </div>
+            </div>
+        </div>
+        <div class="zf-btn"><a href="">返回卡包</a></div>
+    </div>
+</section>
+<div class="jg"></div>
+</div>
+<script>
+	(function (doc, win) {
+	  var docEl = doc.documentElement,
+		resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+		recalc = function () {
+		  var clientWidth = docEl.clientWidth;
+		  if (!clientWidth) return;
+		  docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+		};
+
+	  if (!doc.addEventListener) return;
+	  win.addEventListener(resizeEvt, recalc, false);
+	  doc.addEventListener('DOMContentLoaded', recalc, false);
+	})(document, window);
+</script>
+<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+<script>
+    $(function(){
+        setTimeout(function(){
+            window.location.href="./kb.html";
+        },3000)
+    })
+</script>
+</body>
+</html>

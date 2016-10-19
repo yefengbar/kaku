@@ -1,0 +1,188 @@
+body,div,ol,ul,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,p,form,fieldset,legend,input{ margin:0; padding:0;}
+html {  width: 100%; font-family: 'Heiti SC', 'Microsoft YaHei'; font-size: 50px; outline: 0; -webkit-text-size-adjust:none;}
+body {  width:100%; margin: 0; -webkit-user-select: none; position: relative; background-color:#efeff4;}
+@font-face {
+	/* font-properties */
+	font-family: pictos;
+	src:url(../font/myfont.TTC),  
+	url(../font/myfont.TTC),
+	url(../font/myfont.TTC); /* IE9 */
+}
+.font-face{
+	font-family: pictos;
+}
+@font-face {
+	/* font-properties */
+	font-family: my-font;
+	src: url(../font/myfont.TTC);
+}
+.font-face2{
+	font-family: my-font;
+	color: green;
+}
+a:hover,a:link,a:visited,a{ color:inherit; text-decoration:none;}
+ul,li{list-style:none}
+#_centent{ padding-bottom:0.8rem;;}
+header{ position:relative; width: 7.5rem; height: 0.84rem;  border-bottom:1px solid #d4d4d8; background-color: #fff;}
+.rt-bk{ position:absolute; top:0.27rem; left:0.15rem; float:left;}
+.rt-bk p{ float:left; font-size:0.24rem;}
+.bk{display: block; margin:0.045rem 0.25rem 0 0; float:left; width: 0.15rem; height: 0.24rem; background: url(../img/rt-bk.png) no-repeat; background-size: 0.15rem 0.24rem;}
+.mt-0 {background: #fff;padding:0.2rem;}
+.mt-0 table td {padding:0.2rem;font-size:0.28rem; color:#666;text-align: center;}
+.rt-mn{position:absolute; top:0.27rem; right:0.15rem; float:right;}
+.mn{display: block; margin:0.045rem 0.25rem 0 0; float:left; width: 0.15rem; height: 0.24rem; background: url(../img/arr-mn.png) no-repeat; background-size: 0.15rem 0.24rem;}
+.top-name{ text-align:center; font-size:0.34rem; line-height:0.84rem;}
+.head{ position:relative; width:7.5rem; height:2.2rem; margin-top:0.29rem; background:url(../img/%E7%BB%84%2025.png) no-repeat; background-size:7.5rem 2.2rem;}
+.head-img{ position:absolute; top:0.35rem; left:0.62rem; width:1.43rem; height:1.43rem; padding:0.04rem; border-radius:1rem; background-color:#fff;}
+.head-img img{ width:1.43rem; height:1.43rem;}
+.head-dsb{ position:absolute; top:0.85rem; left:2.78rem;}
+.head-dsb p{ font-size:0.28rem; color:#fff;}
+.dsb-id{ margin-top:0.08rem;}
+.nav{ width:7.5rem; height:0.72rem; margin-top:0.26rem; background-color:#fff;}
+.nav ul li{ position:relative; float:left; width:2.48rem; height:0.55rem; font-size:0.3rem; margin-top:0.085rem; line-height:0.55rem; text-align:center;}
+.nav ul li p{ position:absolute; left:1.2rem; width:0.7rem;}
+.pt-line{ border-left:1px solid #dddddd; border-right:1px solid #dddddd; }
+.idt{ display:block; position:absolute; top:0.11rem; left:0.68rem; float:left; width:0.28rem; height:0.36rem; background:url(../img/indent.png) no-repeat; background-size:0.28rem 0.36rem;}
+.clt{ display:block; position:absolute; top:0.11rem; left:0.68rem; float:left; width:0.39rem; height:0.35rem; background:url(../img/clt.png) no-repeat; background-size:0.39rem 0.35rem;}
+.rcm{ display:block; position:absolute; top:0.11rem; left:0.68rem; float:left; width:0.37rem; height:0.35rem; background:url(../img/rcm.png) no-repeat; background-size:0.37rem 0.35rem;}
+.ps-lt{ width:7.5rem; height:100%; background-color:#fff;}
+/*
+.list2 {display: table;padding:0 0.2rem;width:7.1rem}
+.list2 .ps-lt {width:3.2rem;display: table-cell}
+*/
+.mt-1.list2 {margin:0}
+.list2 {color:#eee;padding:0.2rem}
+.list2 .ps-lt {border-radius: 0.2rem;width:7.1rem;padding:0.2rem 0;margin-bottom: 0.2rem;}
+.list2 .pink {background: #f37ce9}
+.list2 .green {background: #096d6e}
+.list2 .ps-ct {background: none;color:#eee;padding:0 0.2rem}
+.list2 .ps-ct.hy1 {background: url(../img/hy1.png) no-repeat 70% 70%;background-size:4.5rem;}
+.list2 .ps-ct.hy2 {background: url(../img/hy2.png) no-repeat 70% 70%;background-size:3.5rem;}
+.list2 .lt-dsb {background: url(../img/t_35.png) repeat;color:#eee;border: none;padding:0 0.2rem}
+.list2 .lt-dsb p {color:#eee;}
+.list2 .ps-ct .endTime {color:#eee;text-align: right}
+.list2 .ps-ct .endTime img {float: left;height: 0.4rem}
+.list2 .pc-xf .px-btn {background: none;box-shadow: 0 0 1px #000}
+
+.lt-dsb{ position:relative; height:0.66rem; line-height:0.66rem; border-bottom:1px solid #e5e5e5;}
+.lt-dsb p{ margin-left:0.2rem; font-size:0.28rem; color:#444;}
+.arr-right{ display:block; position:absolute; top:0.21rem; right:0.25rem; width:0.14rem; height:0.24rem; background:url(../img/arr-right.png) no-repeat; background-size:0.14rem 0.24rem;}
+.inp_r {width: 5rem;height: 0.5rem;line-height: 0.5rem;color: #666;text-indent: 0.15rem;position:absolute; top:0.08rem; right:0.25rem;border-left:1px solid #e5e5e5;border-top:0px solid #e5e5e5;border-right:0px solid #e5e5e5;border-bottom:0px solid #e5e5e5;outline: none}
+.pos {
+    position: absolute;
+    top: 0.15rem;
+    right: 0.25rem;
+    font-size: 0.25rem;
+    height: 0.45rem;
+    line-height: 0.45rem;
+}
+.check-on{ display:block; position:absolute; top:0.11rem; right:0.25rem; width:0.85rem; height:0.58rem; background:url(../img/on.png) no-repeat; background-size:0.85rem 0.58rem;}
+.check-off{ display:block; position:absolute; top:0.11rem; right:0.25rem; width:0.85rem; height:0.58rem; background:url(../img/off.png) no-repeat; background-size:0.85rem 0.58rem;}
+.cl-bb{ border:none;}
+.mt-1{ margin-top:0.23rem;}
+.mart{ margin-top:0.15rem;}
+.marb{ margin-bottom:0.15rem;}
+.mt-3{ margin-top:0.29rem;}
+.jg{ margin-bottom:0.8rem;}
+.ps-ct {background: #fff;font-size:0.24rem; color:#666;}
+.borb {border-bottom:1px solid #dddddd;}
+.borbd {border-bottom:1px dotted #ddd;}
+.pc-xf {padding:0.2rem;position: relative}
+.pc-xf .px-txt p {padding-left:0.2rem; font-size:0.24rem; }
+.pc-xf .px-txt p.sqly {padding-left:0rem; font-size:0.28rem; }
+.pc-xf .px-txt .season {width:7rem;height:3rem;margin-top:0.15rem;border:none;outline: none;color:#666}
+.pc-xf.dianm .px-txt p {font-size:0.28rem; }
+.pc-xf .px-txt p.bol {font-weight: bold;}
+.padtb {padding:0.15rem}
+.pc-xf .px-btn {position: absolute;width:1.35rem; height:0.66rem;line-height:0.66rem;text-align: center; background: #1aa0fe;color:#fff;font-size: 0.36rem;right: 0.2rem;top:0.2rem;border-radius: 0.1rem} 
+.pc-xf .px-btn a {color:#fff;font-size: 0.3rem;line-height:0.66rem;}
+.ps-ct .endTime {color:#888;font-size: 0.2rem;padding:0.2rem}
+.zf-btn {width:2.35rem; height:0.66rem;line-height:0.66rem;text-align: center; background: #1aa0fe;color:#fff;font-size: 0.36rem;border-radius: 0.1rem;margin:0.5rem auto;}
+.zf-btn a {color:#fff;font-size: 0.3rem;background: none}
+.tips {font-size: 0.6rem;padding:0.5rem;text-align: center}
+.sec {color:#19be40;}
+.fai {color:#f42020;}
+.sqtx p {text-align: center;font-size: 0.35rem;padding: 0.2rem}
+.sqtx div {text-align: center;font-size: 0.35rem;padding:0.1rem 0 0.4rem 0;}
+.sqtx div span {padding:0.1rem 0.2rem;font-size: 0.3rem; border: 1px solid #e3e3e3;line-height: 100%}
+
+/* -- 幻灯 -- */
+.slideShow {
+ position: relative;
+ padding: 0;
+ *zoom: 1;
+}
+.slideShow .slideBox {
+ background: #fff;
+ /*fix other elements on the page moving (on Chrome)*/
+ -webkit-transform: translatez(0);
+ -moz-transform: translatez(0);
+ -ms-transform: translatez(0);
+ -o-transform: translatez(0);
+ transform: translatez(0);
+}
+.slideShow .slideBox .slides img {
+ max-width: 100%;
+ display: block;
+}
+/* -- previous 和 next 按钮 -- */
+.slideShow .arrowBox a {
+ z-index: 50;
+ font-family: \5b8b\4f53, sans-serif;
+ position: absolute;
+ display: block;
+ margin-bottom: -20px;
+ width: 40px;
+ height: 40px;
+ bottom: 50%;
+ line-height: 40px;
+ text-decoration: none;
+ text-align: center;
+ color: #fff;
+ font-size: 2em;
+ background-color: #333;
+ background-color: rgba(50,50,50,.3);
+}
+.slideShow .arrowBox a.disabled {
+ display: none;
+}
+.slideShow .arrowBox .arrowPrev {
+ left: 20px;
+}
+.slideShow .arrowBox .arrowNext {
+ right: 20px;
+}
+.slideShow .arrowBox a:hover {
+ background-color: rgba(50,50,50,.6);
+}
+/* -- controlBox -- */
+.slideShow .controlBox {
+ z-index: 30;
+ position: absolute;
+ bottom: 3px;
+ width: 100%;
+ text-align: center;
+ font-size: .85em;
+ font-family: Arial;
+ font-weight: bold;
+ color: #666;
+    height: 0.3rem;
+}
+.slideShow .controlBox .control {
+ display: inline-block;
+ *zoom: 1;
+ *display: inline;
+}
+.slideShow .controlBox.controlDefault a {
+ background: url(../img/inactive.png) no-repeat 50% 50%;
+ text-indent: -9999px;
+ width: 13px;
+ height: 13px;
+ clear: none;
+ display: block;
+}
+.slideShow .controlBox.controlDefault a:hover, .slideShow .controlBox.controlDefault a.active {
+ background: url(../img/active.png) no-repeat 50% 50%;
+}
+.dzkje {width:4rem;height:0.5rem;line-height: 0.5rem;border: 1px solid #e3e3e3;text-align: center}
+.ps-ct p {line-height: 0.5rem}
